@@ -219,6 +219,7 @@ function smoothScrollAnchors(){
 }
 
 function openCloseModalWindow(){
+  const modalWindowWrapper = document.querySelector('.modal-window__wrapper');
   const modalWindow = document.querySelector('.modal-window');
   const loginLink = document.querySelector('.login-link');
   const registerLink = document.querySelector('.register-link');
@@ -236,11 +237,13 @@ function openCloseModalWindow(){
   btnPopups.forEach(btn => {
     btn.addEventListener('click', () => {
       modalWindow.classList.toggle('active-popup');
+      modalWindowWrapper.classList.toggle('active-popup');
     });
   });
   
   iconClose.addEventListener('click', () => {
     modalWindow.classList.remove('active-popup');
+    modalWindowWrapper.classList.remove('active-popup');
   });
   
   modalWindow.addEventListener('wheel', preventScroll, {passive: false});
