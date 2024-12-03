@@ -75,7 +75,7 @@ function toggleContent(elementSelector, fallbackText, maxWidth, svgPath = null, 
     if (svgPath && style) {
       element.innerHTML = `<a href="#header"><img src="${svgPath}" alt="icon" style="${style}"></a>`;
     } else if (svgPath && !style) {
-      element.innerHTML = `<img src="${svgPath}" alt="icon">`;
+      element.innerHTML = `<img src="${svgPath}" alt="home">`;
     } else {
       element.innerHTML = '';
     }
