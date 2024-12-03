@@ -287,7 +287,7 @@ function removeClassActivePopUp(){
 removeClassActivePopUp();
 asidesToFixed();
 ScrollMainNavigation();
-toggleContent('.main-navigation__box-item--first', '<a href="#header">Start</a>', 1240, "images/home.svg", "max-width: 20px;");
+toggleContent('.main-navigation__box-item--first', '<a href="#header">Start</a>', 1240, "img/home.svg", "max-width: 20px;");
 toggleContent('.profile__box-text', 'Account', 750);
 burgerMenu();
 smoothScrollForFirefox();
