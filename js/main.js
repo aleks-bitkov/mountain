@@ -1,32 +1,3 @@
-<<<<<<< HEAD
-=======
-SmoothScroll({
-
-  animationTime: 800,
-
-  stepSize: 75,
-
-
-
-
-  accelerationDelta: 30,
-
-  accelerationMax: 2,
-
-  keyboardSupport: true,
-  arrowScroll: 50,
-
-  pulseAlgorithm: true,
-  pulseScale: 4,
-  pulseNormalize: 1,
-
-
-  touchpadSupport: true
-});
-
-
-
->>>>>>> e5e16bb (optimaze all project)
 function asidesToFixed(){
   const asideContact = document.querySelector(".contact")
   const asideMainNavigation = document.querySelector(".main-navigation")
@@ -51,10 +22,6 @@ function asidesToFixed(){
   
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e5e16bb (optimaze all project)
 function ScrollMainNavigation(){
   let sectionLevel = document.querySelector("#level").offsetTop;
   let sectionEssentials = document.querySelector("#essentials").offsetTop;
@@ -306,11 +273,6 @@ function backToTop(){
   applyStyleOnScroll();  
 }
 
-<<<<<<< HEAD
-
-
-
-=======
 function removeClassActivePopUp(){
   window.addEventListener('wheel', function(){
     const scrollPosition = window.scrollY;
@@ -321,9 +283,7 @@ function removeClassActivePopUp(){
   });
 };
 
-
 removeClassActivePopUp();
->>>>>>> e5e16bb (optimaze all project)
 asidesToFixed();
 ScrollMainNavigation();
 toggleContent('.main-navigation__box-item--first', '<a href="#header">Start</a>', 1240, "images/home.svg", "max-width: 20px;");
